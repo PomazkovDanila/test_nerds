@@ -55,6 +55,8 @@ img {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -91,7 +93,6 @@ p {
   line-height: 24px;
   font-family: Roboto, Arial, sans-serif;
   color: var(--color-black);
-  text-transform: uppercase;
 }
 
 /* Стили */
@@ -102,6 +103,8 @@ p {
   align-items: center;
 
   background-color: var(--color-background);
+
+  text-transform: uppercase;
 }
 .main-header__container {
   min-width: 1160px;
@@ -187,7 +190,6 @@ p {
 }
 .main-slider__container {
   max-width: 1160px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,28 +197,33 @@ p {
 .main-slider__left {
 }
 .main-slider__title {
+  font-style: bold;
   font-weight: 700;
   font-size: 55px;
   line-height: 55px;
-  text-transform: none;
 }
 .main-slider__description {
   margin-top: 25px;
 
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  text-transform: none;
+
+  color: var(--color-gray-text);
 }
 .main-slider__button {
   margin-top: 38px;
-  padding: 16px 54px 16px 54px;
-  background-color: #fb565a;
+  padding: 17px 54px 15px 54px;
+  background-color: var(--color-card-red);
   border-radius: 3px;
 
   display: inline-block;
 
+  text-transform: uppercase;
+  font-style: medium;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   color: var(--color-white);
 }
@@ -225,7 +232,68 @@ p {
   height: 430px;
 }
 /*----------mainservices----------*/
+.main-service {
+  display: flex;
+  justify-content: center;
+}
+.main-service__container {
+  margin-top: 80px;
+  min-width: 1160px;
+  display: flex;
+  justify-content: space-between;
 
+  padding-bottom: 80px;
+  border-bottom: 2px solid var(--color-background);
+}
+.service-card {
+  max-width: 300px;
+}
+.service-card__img {
+  width: 300px;
+  height: 146px;
+}
+.service-card__title {
+  margin-top: 25px;
+
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.service-card__description {
+  margin-top: 16px;
+
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-gray-text);
+}
+.service-card__button {
+  margin-top: 32px;
+
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  display: inline-block;
+  padding: 17px 40px 15px 40px;
+  border-radius: 3px;
+}
+.service-card__button.red {
+  background-color: var(--color-card-red);
+}
+.service-card__button.green {
+  background-color: var(--color-card-green);
+}
+.service-card__button.yellow {
+  background-color: var(--color-card-yellow);
+}
 /*----------about----------*/
 
 /*----------links----------*/
