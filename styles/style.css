@@ -80,7 +80,7 @@ p {
 }
 
 .page-body {
-  min-width: 1440px;
+  /* min-width: 1440px; */
   margin: 0;
   padding: 0;
   background-color: var(--color-white);
@@ -485,6 +485,9 @@ p {
   position: relative;
 
   background-image: url(../src/img/map\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .main-adress__container {
   width: 1160px;
@@ -523,15 +526,7 @@ p {
   line-height: 18px;
   text-transform: uppercase;
 }
-.main-adress__marker {
-  background-image: url(../src/img/map-marker\ 1.png);
-  width: 231px;
-  height: 190px;
 
-  position: absolute;
-  left: 52%;
-  top: 20%;
-}
 /*----------footer----------*/
 .main-footer {
   display: flex;
