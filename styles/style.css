@@ -199,14 +199,21 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .main-slider__container {
   width: 1160px;
+  max-width: auto;
+}
+
+.main-slide__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
+
 .main-slider__left {
+  width: 700px;
 }
+
 .main-slider__title {
   font-weight: 500;
   font-size: 55px;
