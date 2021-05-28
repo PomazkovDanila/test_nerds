@@ -193,23 +193,58 @@ p {
 /*----------slider----------*/
 .main-slider {
   background-color: var(--color-background);
-  min-height: 430px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .main-slider__container {
   width: 1160px;
   max-width: auto;
 }
-
 .main-slide__wrapper {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 78px;
+  padding-bottom: 80px;
 }
+.main-slide__wrapper.slider1 {
+  background-image: url(../src/img/nerds-index-slide1\ 1.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.main-slide__wrapper.slider2 {
+  background-image: url(../src/img/nerds-index-slide2\ 1.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.main-slide__wrapper.slider3 {
+  background-image: url(../src/img/nerds-index-slide3\ 1.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.swiper-pagination-bullet {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  opacity: 1;
 
+  bottom: 80px;
+}
+.slider .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 13px;
+}
+.swiper-pagination-bullet-active::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid var(--color-background);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
 .main-slider__left {
   width: 700px;
 }
