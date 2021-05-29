@@ -91,6 +91,12 @@ p {
   font-family: Roboto, Arial, sans-serif;
   color: var(--color-black);
 }
+
+.container {
+  width: 1160px;
+  max-width: auto;
+}
+
 .button {
   font-family: Roboto, Arial, sans-serif;
 }
